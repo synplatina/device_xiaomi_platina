@@ -69,4 +69,4 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/xiaomi/platina/platina-vendor.mk)
+$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
