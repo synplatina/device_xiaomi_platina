@@ -49,6 +49,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_csot_fhd_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_csot_fhd_video_dsi_panel.xml \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
 
+# Port Display Calibration from taimen to fix delay on some panels
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/configs/touchscreen.idc:(TARGET_COPY_OUT_SYSTEM)/usr/idc/touchscreen.idc
+	
 # FM
 BOARD_HAVE_QCOM_FM := false
 

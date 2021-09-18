@@ -29,3 +29,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.sf.blurs_are_expensive=1
+
+# Enable Fix Touchscreen Delay
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.sys.oem_smooth=1 \
+	persist.vendor.qti.inputopts.enable=true \
+	persist.vendor.qti.inputopts.movetouchslop=0.5
+	
